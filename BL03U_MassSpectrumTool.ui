@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BL03U_MassSpectrumTools</class>
+ <widget class="QMainWindow" name="BL03U_MassSpectrumTools">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>312</width>
+    <height>284</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <family>Adobe 黑体 Std R</family>
+        <pointsize>16</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>燃烧站光电离质谱数据处理软件</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget {
+	background-color: #f0f0f0; /* 浅灰色背景 */
+	border: 1px solid #cccccc; /* 边框颜色 */
+	border-radius: 8px; /* 边框圆角 */
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout" stretch="2,1,2,1,2">
+         <property name="spacing">
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="font">
+            <font>
+             <family>Microsoft YaHei UI</family>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    border: none; /* 移除边框 */
+    border-radius: 8px; /* 适中的圆角 */
+    padding: 10px 20px; /* 增加内边距，使按钮更加宽敞 */
+    background-color: #007BFF; /* 深蓝色背景，更加醒目 */
+    color: white; /* 字体颜色保持白色 */
+    min-width: 120px; /* 增加最小宽度 */
+    min-height: 20px; /* 增加最小高度 */
+    font: bold 18px; /* 增加字体大小，使其更加突出 */
+    transition: background-color 0.3s, transform 0.1s; /* 添加背景颜色和变形渐变效果 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 添加阴影，增加立体感 */
+}
+
+QPushButton:hover {
+    background-color: #0056b3; /* 鼠标悬停时的背景颜色更深 */
+    transform: scale(1.05); /* 轻微放大按钮，增加互动感 */
+}
+
+QPushButton:pressed {
+    background-color: #003d82; /* 按钮被按下时的背景颜色更深 */
+    transform: scale(0.95); /* 轻微缩小按钮，模拟按下效果 */
+}</string>
+           </property>
+           <property name="text">
+            <string>卡峰及质谱定标工具</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="font">
+            <font>
+             <family>Microsoft YaHei UI</family>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    border: none; /* 移除边框 */
+    border-radius: 8px; /* 适中的圆角 */
+    padding: 10px 20px; /* 增加内边距，使按钮更加宽敞 */
+    background-color: #007BFF; /* 深蓝色背景，更加醒目 */
+    color: white; /* 字体颜色保持白色 */
+    min-width: 120px; /* 增加最小宽度 */
+    min-height: 20px; /* 增加最小高度 */
+    font: bold 18px; /* 增加字体大小，使其更加突出 */
+    transition: background-color 0.3s, transform 0.1s; /* 添加背景颜色和变形渐变效果 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 添加阴影，增加立体感 */
+}
+
+QPushButton:hover {
+    background-color: #0056b3; /* 鼠标悬停时的背景颜色更深 */
+    transform: scale(1.05); /* 轻微放大按钮，增加互动感 */
+}
+
+QPushButton:pressed {
+    background-color: #003d82; /* 按钮被按下时的背景颜色更深 */
+    transform: scale(0.95); /* 轻微缩小按钮，模拟按下效果 */
+}</string>
+           </property>
+           <property name="text">
+            <string>热解曲线及PIE曲线绘制</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="font">
+            <font>
+             <family>Microsoft YaHei UI</family>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    border: none; /* 移除边框 */
+    border-radius: 8px; /* 适中的圆角 */
+    padding: 10px 20px; /* 增加内边距，使按钮更加宽敞 */
+    background-color: #007BFF; /* 深蓝色背景，更加醒目 */
+    color: white; /* 字体颜色保持白色 */
+    min-width: 120px; /* 增加最小宽度 */
+    min-height: 20px; /* 增加最小高度 */
+    font: bold 18px; /* 增加字体大小，使其更加突出 */
+    transition: background-color 0.3s, transform 0.1s; /* 添加背景颜色和变形渐变效果 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 添加阴影，增加立体感 */
+}
+
+QPushButton:hover {
+    background-color: #0056b3; /* 鼠标悬停时的背景颜色更深 */
+    transform: scale(1.05); /* 轻微放大按钮，增加互动感 */
+}
+
+QPushButton:pressed {
+    background-color: #003d82; /* 按钮被按下时的背景颜色更深 */
+    transform: scale(0.95); /* 轻微缩小按钮，模拟按下效果 */
+}</string>
+           </property>
+           <property name="text">
+            <string>PIE拟合工具</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer_7">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="font">
+         <font>
+          <family>Microsoft YaHei UI</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>退出</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_8">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>312</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
