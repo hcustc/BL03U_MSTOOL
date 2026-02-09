@@ -1,0 +1,48 @@
+# OS and editor
+.DS_Store
+.idea/
+.vscode/
+
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Python environments
+.venv/
+venv/
+env/
+.python-version
+.env
+.env.*
+
+# Build and packaging artifacts
+build/
+dist/
+*.egg-info/
+
+# Runtime artifacts
+*.log
+tmp/
+temp/
+.coverage
+coverage.xml
+htmlcov/
+
+# Generated outputs and intermediate data
+results/
+data/interim/
+data/processed/
+path_to_save_images/
+image/Temperature/
+data/abc.txt
+data/data_output.xlsx
+data/*.png
+
+# Keep only minimal repository sample data under data/raw/C6F11O2H
+data/raw/C6F11O2H/*
+!data/raw/C6F11O2H/11.5eV/
+data/raw/C6F11O2H/11.5eV/*
+!data/raw/C6F11O2H/11.5eV/C23072502-0000.txt
